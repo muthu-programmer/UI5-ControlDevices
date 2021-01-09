@@ -1,0 +1,54 @@
+<mvc:View xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:core="sap.ui.core"
+          xmlns:l="sap.ui.layout"
+          xmlns:form="sap.ui.layout.form"
+          controllerName="controlDevices.controller.App">
+      <form:SimpleForm id="Light"
+                      layout="ResponsiveGridLayout"
+                      title="Control your devices"
+                      labelSpanXL="4"
+                      labelSpanL="3"
+                      labelSpanM="4"
+                      labelSpanS="12"
+                      adjustLabelSpan="false"
+                      emptySpanXL="0"
+                      emptySpanL="4"
+                      emptySpanM="0"
+                      emptySpanS="0"
+                      columnsXL="2"
+                      columnsL="1"
+                      columnsM="1"
+                      singleContainerFullSize="false">
+          <form:content>
+              <core:Title text="Your Mobile Number" />
+              <Label text="Mobile Number" required="true"/>
+              <Input id="mobileNumber" width="50%" type="Number" />
+              <Button text="Confirm" id="mobileButton" press="onConfirm" width="40%" />
+ 
+              <core:Title text="Lights" />
+              <Label text="Light1" />
+              <Switch id="idLight1" change='onChangeLight1($event)' />
+              <Label text="Light2"/>
+              <Switch id="idLight2" change='onChangeLight2($event)'/>
+              <Label text="Light3" />
+              <Switch id="idLight3" change='onChangeLight3($event)'/>
+              <Label text="Light4" />
+              <Switch id="idLight4" change='onChangeLight4($event)'/>
+              <Label text="Light5" />
+              <Switch id="idLight5" change='onChangeLight5($event)'/>
+
+              <core:Title text="Motors" />
+              <Label text="Motor1" />
+              <Switch id="idMotor1" change='onChangeMotor1($event)' />
+              <Label text="Motor2" />
+              <Switch id="idMotor2" change='onChangeMotor2($event)'/>
+              <Label text="Motor3" />
+              <Switch id="idMotor3" change='onChangeMotor3($event)'/>
+              <Label text="Motor4" />
+              <Switch id="idMotor4" change='onChangeMotor4($event)'/>
+              <Label text="Motor5" />
+              <Switch id="idMotor5" change='onChangeMotor5($event)'/>
+          </form:content>
+      </form:SimpleForm> 
+</mvc:View>
